@@ -19,4 +19,4 @@ FROM base
 COPY --from=builder $PYROOT/lib/ $PYROOT/lib/
 COPY run.py /bin
 
-CMD ["run.py"]
+RUN chmod +x /bin/run.py
